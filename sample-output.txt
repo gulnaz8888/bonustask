@@ -1,0 +1,48 @@
+=== short test ===
+text    = ababa
+pattern = aba
+matches = [0, 2]
+
+=== medium test ===
+text    = abcxabcdabxabcdabcdabcy
+pattern = abcdabcy
+matches = [15]
+
+=== long test ===
+text    = aaaaabaaaaabaaaaabaaaaabaaaaab
+pattern = aaaaab
+matches = [0, 6, 12, 18, 24]
+
+=== benchmark (manual sizes) ===
+n = 1000
+text length = 1000
+pattern = AAAB
+matches = [996]
+time (ms) = 0.1101
+
+n = 10000
+text length = 10000
+pattern = AAAB
+matches = [9996]
+time (ms) = 1.2714
+
+n = 100000
+text length = 100000
+pattern = AAAB
+matches = [99996]
+time (ms) = 4.4624
+
+n = 500000
+text length = 500000
+pattern = AAAB
+matches = [499996]
+time (ms) = 1.5890
+
+=== benchmark (from json) ===
+n = 10        pattern = abc    time(ms) = 0    matches = 1
+n = 100       pattern = abc    time(ms) = 0    matches = 1
+n = 1000      pattern = abc    time(ms) = 0    matches = 1
+n = 10000     pattern = abc    time(ms) = 0    matches = 1
+n = 100000    pattern = abc    time(ms) = 1    matches = 1
+n = 500000    pattern = abc    time(ms) = 5    matches = 1
+n = 1000000   pattern = abc    time(ms) = 1    matches = 1
