@@ -1,0 +1,11 @@
+{
+  "tests": [
+    { "n": 10,       "pattern": "abc" },
+    { "n": 100,      "pattern": "abc" },
+    { "n": 1000,     "pattern": "abc" },
+    { "n": 10000,    "pattern": "abc" },
+    { "n": 100000,   "pattern": "abc" },
+    { "n": 500000,   "pattern": "abc" },
+    { "n": 1000000,  "pattern": "abc" }
+  ]
+}
