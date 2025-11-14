@@ -165,3 +165,5 @@ readme.md
 This project fully implements the KMP algorithm, analyzes its behavior under different conditions, measures real runtime on large input sizes, and visualizes both practical and theoretical growth.
 All results, tests, graphs, and code are included for transparency and reproducibility.
 
+Author: Eskermes Gylnaz
+Group : Se-2438
