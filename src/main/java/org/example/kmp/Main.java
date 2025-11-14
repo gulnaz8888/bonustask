@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         runExampleTests();
         runSimpleBenchmark();
+        runJsonBenchmark();
     }
 
     private static void runExampleTests() {
@@ -41,7 +42,7 @@ public class Main {
     }
 
     private static void runSimpleBenchmark() {
-        System.out.println("=== benchmark ===");
+        System.out.println("=== benchmark (manual sizes) ===");
 
         int[] sizes = {1000, 10_000, 100_000, 500_000};
         String pattern = "AAAB";
@@ -65,6 +66,30 @@ public class Main {
             System.out.println("time (ms) = " + String.format("%.4f", ms));
             System.out.println();
         }
+    }
+
+    private static void runJsonBenchmark() {
+        System.out.println("=== benchmark (from json) ===");
+
+        List<TestCase> tests = TestCaseLoader.load();
+        for (TestCase t : tests) {
+            String text = generateText(t.n, t.pattern);
+
+            KmpMatcher matcher = new KmpMatcher(text, t.pattern);
+
+            long start = System.nanoTime();
+            matcher.run();
+            long end = System.nanoTime();
+
+            long timeMs = (end - start) / 1_000_000;
+            int count = matcher.matches().size();
+
+            System.out.println("n = " + t.n +
+                    " pattern = " + t.pattern +
+                    " time(ms) = " + timeMs +
+                    " matches = " + count);
+        }
+        System.out.println();
     }
 
     private static String generateText(int n, String pattern) {
