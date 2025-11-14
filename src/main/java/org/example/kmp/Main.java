@@ -1,4 +1,4 @@
-package org.example.string.kmp;
+package org.example.kmp;
 
 import java.util.List;
 
