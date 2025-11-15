@@ -1,4 +1,4 @@
-## KMP String Matching Algorithm — Full Implementation, Tests, Benchmark & Analysis
+## KMP String Matching Algorithm - Full Implementation, Tests, Benchmark & Analysis
 
 This project contains a complete from-scratch implementation of the Knuth–Morris–Pratt (KMP) string-matching algorithm in Java.
 The repository includes implementation, test cases, benchmarking, JSON-based automated tests, runtime graphs, and a full time/space complexity analysis.
@@ -162,5 +162,5 @@ readme.md
 This project fully implements the KMP algorithm, analyzes its behavior under different conditions, measures real runtime on large input sizes, and visualizes both practical and theoretical growth.
 All results, tests, graphs, and code are included for transparency and reproducibility.
 
-Author: Yeskermes Gylnaz
+Author: Yeskermes Gulnaz
 Group : Se-2438
