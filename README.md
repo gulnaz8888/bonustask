@@ -100,14 +100,12 @@ n = 1000000   pattern = abc    time(ms) = 1    matches = 1
 ---
 ## Practical Runtime Graph
 
-/images/KMP_Practical_Graphic.png
-
+![KMP_Practical_Graphic.png](images/KMP_Practical_Graphic.png)
 ---
 
 ## Theoretical Complexity Graph (O(n))
 
-/images/KMP_Theory_Graphic.png
-
+![KMP_Theory_Graphic.png](images/KMP_Theory_Graphic.png)
 ---
 
 
@@ -131,8 +129,7 @@ O(m)
 
 The file contains the complete, real output of the program and is included in the repository:
 
-/sample-output.txt
-
+[sample-output.txt](sample-output.txt)
 ---
 
 ## Project Structure
@@ -165,5 +162,5 @@ readme.md
 This project fully implements the KMP algorithm, analyzes its behavior under different conditions, measures real runtime on large input sizes, and visualizes both practical and theoretical growth.
 All results, tests, graphs, and code are included for transparency and reproducibility.
 
-Author: Eskermes Gylnaz
+Author: Yeskermes Gylnaz
 Group : Se-2438
